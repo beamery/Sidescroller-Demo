@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE themes PUBLIC "-//www.matthiasmann.de//TWL-Theme//EN" "http://hg.l33tlabs.org/twl/raw-file/tip/src/de/matthiasmann/twl/theme/theme.dtd">
+
+<themes>
+	
+	<images file="uielements.png">
+		<area name="-frameA" xywh="0,0,27,27" splitx="L3,R3" splity="T3,B3" />
+		<area name="-frameB" xywh="27,0,27,27" splitx="L3,R3" splity="T3,B3" />
+		<area name="-frameC" xywh="54,0,27,27" splitx="L3,R3" splity="T3,B3" />
+		<area name="-cog" xywh="0,190,79,79" />
+		<area name="-play" xywh="81,190,79,79" />
+		<area name="-quit" xywh="162,190,79,79" />
+		
+		<select name="button.background">
+			<alias ref="-frameA" if="disabled" tint="#8fff" />
+			<alias ref="-frameC" if="armed"  />
+			<alias ref="-frameB" if="hover"  />
+			<alias ref="-frameA"  />
+		</select>
+		<select name="-play-overlay">
+			<alias ref="-play" if="disabled" tint="#4fff" />
+			<alias ref="-play" if="armed" />
+			<alias ref="-play" if="hover" tint="#fccc" />
+			<alias ref="-play" tint="#f888" />
+		</select>
+		<select name="-cog-overlay">
+			<alias ref="-cog" if="disabled" tint="#4fff" />
+			<alias ref="-cog" if="armed" />
+			<alias ref="-cog" if="hover" tint="#fccc" />
+			<alias ref="-cog" tint="#f888" />
+		</select>
+		<select name="-quit-overlay">
+			<alias ref="-quit" if="disabled" tint="#4fff" />
+			<alias ref="-quit" if="armed" />
+			<alias ref="-quit" if="hover" tint="#fccc" />
+			<alias ref="-quit" tint="#f888" />
+		</select>
+	</images>
+	
+	<images file="simple.png" format="RGBA">
+		<area name="-gridA" xywh="0,0,9,9" splitx="L3,R3" splity="T3,B3" />
+		<area name="-gridB" xywh="10,0,9,9" splitx="L3,R3" splity="T3,B3" />
+		<area name="-gridC" xywh="20,0,9,9" splitx="L3,R3" splity="T3,B3" />
+		<area name="-gridD" xywh="30,0,9,9" splitx="L3,R3" splity="T3,B3" />
+		<area name="-gridE" xywh="40,0,9,9" splitx="L3,R3" splity="T3,B3" />
+		<area name="-gridF" xywh="50,0,9,9" splitx="L3,R3" splity="T3,B3" />
+		<area name="-gridG" xywh="60,0,9,9" splitx="L3,R3" splity="T3,B3" />
+		<area name="-gridH" xywh="70,0,9,9" splitx="L3,R3" splity="T3,B3" />
+		
+		<select name="button-plain.background">
+			<alias ref="-gridB" if="disabled" tint="#8fff" />
+			<alias ref="-gridE" if="armed" />
+			<alias ref="-gridB" />
+		</select>
+	</images>
+	
+	<images file="button.png" format="RGBA">
+		<area name="-buttonA" xywh="0,0,150,21" />
+		<area name="-buttonB" xywh="150,0,150,21" />
+		<area name="-buttonC" xywh="300,0,150,21" />
+		
+		<select name="button-raised.background">
+			<alias ref="-buttonA" if="disabled" tint="#8fff" />
+			<alias ref="-buttonC" if="armed" />
+			<alias ref="-buttonB" if="hover" />
+			<alias ref="-buttonA" />
+		</select>
+	</images>
+	
+	<fontDef name="normal" filename="font.fnt" color="black">
+		<fontParam if="error" color="red" />
+		<fontParam if="disabled" color="gray" />
+		<fontParam if="textSelection" color="blue" />
+	</fontDef>
+
+	<inputMapDef name="-defaultInputMap">
+		<action name="selectAll">ctrl A</action>
+		<action name="cut">ctrl X</action>
+		<action name="copy">ctrl C</action>
+		<action name="paste">ctrl V</action>
+	</inputMapDef>
+		
+ 	<theme name="-defaults">
+		<param name="background"><image>none</image></param>
+		<param name="overlay"><image>none</image></param>
+		<param name="font"><font>normal</font></param>
+       	<param name="textAlignment"><enum type="alignment">center</enum></param>
+       	<param name="minWidth"><int>0</int></param>
+	 	<param name="minHeight"><int>0</int></param>
+	 	<param name="maxWidth"><int>0</int></param>
+		<param name="maxHeight"><int>0</int></param>
+		<param name="inputMap"><inputMap>-defaultInputMap</inputMap></param>
+	</theme>
+	
+    <theme name="tooltipwindow" ref="-defaults">
+		<param name="background"><image>-gridH</image></param>
+		<param name="border"><border>3</border></param>
+		<param name="fadeInTime"><int>200</int></param>
+		<theme name="label" ref="-defaults"/>
+	</theme>
+	
+	<theme name="statewidget" ref="-defaults">
+		<theme name="button-raised" ref="-defaults">
+			<param name="background"><image>button.background</image></param>
+		</theme>
+		<theme name="play-button" ref="-defaults">
+			<param name="overlay"><image>-play-overlay</image></param>
+		</theme>
+		<theme name="cog-button" ref="-defaults">
+			<param name="overlay"><image>-cog-overlay</image></param>
+		</theme>
+		<theme name="quit-button" ref="-defaults">
+			<param name="overlay"><image>-quit-overlay</image></param>
+		</theme>
+	</theme>
+</themes>

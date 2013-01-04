@@ -1,0 +1,15 @@
+
+optimize random map generation
+figure out how to "chunk" parts of maps so that they can be loaded and unloaded dynamically
+make animations for mobs, maybe weapons, different items
+Consolidate sprites for individual mobs into single spritesheets
+implement entities (mobs, terrain, items(?), etc.)
+^ entity manager
+make inner game gui
+add hp/mp/etc.
+optimize player collision to check fewer surrounding tiles
+add a goal to the game (multiple levels, different block types?)
+add inventory system
+figure out how to implement multiple weapons
+make character classes
+implement skill system

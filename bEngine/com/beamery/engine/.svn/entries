@@ -1,0 +1,46 @@
+10
+
+dir
+17
+file:///Users/brian/Dropbox/Java/bEngine/com/beamery/engine
+file:///Users/brian/Dropbox/Java/bEngine
+
+
+
+2012-04-03T18:24:42.342000Z
+16
+brian
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+0d74eba7-79c3-7b46-828a-ba342824e16a
+
+core
+dir
+
+gfx
+dir
+
+input
+dir
+
+sound
+dir
+
+tileset
+dir
+
+util
+dir
+

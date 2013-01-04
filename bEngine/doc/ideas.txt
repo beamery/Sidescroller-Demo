@@ -1,0 +1,5 @@
+
+fine-tune input system
+figure out how to do menus
+implement scrolling (parallax) background
+fine-tune game loop

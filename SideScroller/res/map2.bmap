@@ -1,0 +1,32 @@
+# Test map 2
+# 
+# Key
+# g - grass top
+# f - grass left
+# h - grass right
+# d - dirt
+# s - dirt left
+# D - dirt right
+# w - water
+# W - water top
+# b - boundary
+# n - empty
+##################################
+#
+b                                              
+b                                              
+b                                              
+b                                              
+b                                              fgggggh
+b                                              sddddddh 
+b                                             fddddddddh
+b                                            fddddddddddgggggggggggggggggg
+b                                           fddddddddddddddddddddddddddddd
+b                                          fdddddddddddddddddddddddddddddd
+b                                         fddddddddddddddddddddddddddddddd
+b                                        fdddddddddddddddddddddddddddddddd
+b            fghWWWWWWWfh               fddddddddddddddddddddddddddddddddd
+gggh      fggddDwwwwwwwsdgggggghWWWWWWWfdddddddddddddddddddddddddddddddddd
+ddddgh  fgdddddDwwwwwwwsdddddddddddddddddddddddddddddddddddddddddddddddddd
+ddddddggddddddddDwwwwsdddddddddddddddddddddddddddddddddddddddddddddddddddd
+ddddddddddddddddDwwwwsdddddddddddddddddddddddddddddddddddddddddddddddddddd
